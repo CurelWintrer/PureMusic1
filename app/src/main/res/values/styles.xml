@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light Theme -->
+    <style name="Theme.MyApp.Light" parent="Theme.Material3.Light.NoActionBar">
+        <item name="componentBackgroundColor">@color/light_background</item>
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="Theme.MyApp.Dark" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="componentBackgroundColor">@color/dark_background</item>
+    </style>
+
+</resources>

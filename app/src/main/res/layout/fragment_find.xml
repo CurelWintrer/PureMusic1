@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Find">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发现"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorPrimary"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <TextView
+                android:id="@+id/findTextView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="每日推荐音乐>"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dailyRecommendations"
+                app:layout_constraintTop_toBottomOf="@+id/findTextView"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal"
+
+                />
+
+            <TextView
+                android:id="@+id/recommendPlaylistTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐歌单>"
+                app:layout_constraintTop_toBottomOf="@+id/dailyRecommendations"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="20dp"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/playlistRecommendations"
+                app:layout_constraintTop_toBottomOf="@+id/recommendPlaylistTextView"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal"
+
+                />
+
+            <TextView
+                android:id="@+id/recommendHostArtistTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/playlistRecommendations"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="热门歌手>"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/artistRecommendations"
+                app:layout_constraintTop_toBottomOf="@+id/recommendHostArtistTextView"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal"
+
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

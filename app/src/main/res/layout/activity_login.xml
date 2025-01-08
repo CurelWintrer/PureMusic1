@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <TextView
+        android:id="@+id/remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toTopOf="@+id/imageView"
+
+        />
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/wangyiyun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/rounded_edit_text"
+        android:gravity="center"
+        android:hint="手机号"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+
+    <EditText
+        android:id="@+id/AuthCode"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="验证码"
+        android:gravity="center"
+        android:inputType="number"
+        android:background="@drawable/rounded_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/GetAuthCode"
+        />
+
+    <ImageButton
+        android:id="@+id/GetAuthCode"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/get_code"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <ImageButton
+        android:id="@+id/LoginButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/login"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/AuthCode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

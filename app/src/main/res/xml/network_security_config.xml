@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">192.168.0.12</domain>
+        <domain includeSubdomains="true">10.210.190.49</domain>
+        <domain includeSubdomains="true">192.168.31.30</domain>
+        <domain includeSubdomains="true">10.210.129.240</domain>
+        <domain includeSubdomains="true">192.168.147.129</domain>
+        <domain includeSubdomains="true">192.168.41.129</domain>
+        <domain includeSubdomains="true">10.210.176.120</domain>
+        <domain includeSubdomains="true">10.210.189.144</domain>
+        <domain includeSubdomains="true">10.210.132.167</domain>
+        <domain includeSubdomains="true">p1.music.126.net</domain>
+        <domain includeSubdomains="true">p2.music.126.net</domain>
+        <domain includeSubdomains="true">m8.music.126.net</domain>
+        <domain includeSubdomains="true">m801.music.126.net</domain>
+        <domain includeSubdomains="true">m802.music.126.net</domain>
+        <domain includeSubdomains="true">m803.music.126.net</domain>
+        <domain includeSubdomains="true">m10.music.126.net</domain>
+        <domain includeSubdomains="true">m7.music.126.net</domain>
+        <domain includeSubdomains="true">m701.music.126.net</domain>
+        <domain includeSubdomains="true">m702.music.126.net</domain>
+        <domain includeSubdomains="true">m703.music.126.net</domain>
+        <domain includeSubdomains="true">imge.kugou.com</domain>
+        <domain includeSubdomains="true">background.bssdl.kugou.com</domain>
+        <domain includeSubdomains="true">m704.music.126.net</domain>
+        <domain includeSubdomains="true">m804.music.126.net</domain>
+        <domain includeSubdomains="true">47.101.66.155</domain>
+    </domain-config>
+</network-security-config>

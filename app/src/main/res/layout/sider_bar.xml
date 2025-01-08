@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorBackgroundFloating"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/SideCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_background"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="-14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/About"
+
+        />
+
+
+    <ImageButton
+        android:id="@+id/Find"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="20dp"
+        android:src="@drawable/find"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发现"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnPrimary"
+        android:layout_marginStart="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Find"
+        app:layout_constraintStart_toStartOf="@+id/Find"
+        app:layout_constraintTop_toTopOf="@+id/Find" />
+
+
+    <ImageButton
+        android:id="@+id/LocalMusic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="20dp"
+        android:src="@drawable/localmusic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Find" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本地音乐"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnPrimary"
+        android:layout_marginStart="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/LocalMusic"
+        app:layout_constraintStart_toStartOf="@+id/LocalMusic"
+        app:layout_constraintTop_toTopOf="@+id/LocalMusic" />
+
+
+    <ImageButton
+        android:id="@+id/Index"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="20dp"
+        android:src="@drawable/index"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LocalMusic" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主页"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnPrimary"
+        android:layout_marginStart="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Index"
+        app:layout_constraintStart_toStartOf="@+id/Index"
+        app:layout_constraintTop_toTopOf="@+id/Index" />
+
+
+    <ImageButton
+        android:id="@+id/TimingClose"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="20dp"
+        android:src="@drawable/timing_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Index" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定时关闭"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnPrimary"
+        android:layout_marginStart="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TimingClose"
+        app:layout_constraintStart_toStartOf="@+id/TimingClose"
+        app:layout_constraintTop_toTopOf="@+id/TimingClose" />
+
+
+    <ImageButton
+        android:id="@+id/Setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="20dp"
+        android:src="@drawable/setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimingClose" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnPrimary"
+        android:layout_marginStart="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Setting"
+        app:layout_constraintStart_toStartOf="@+id/Setting"
+        app:layout_constraintTop_toTopOf="@+id/Setting" />
+
+
+    <ImageButton
+        android:id="@+id/Theme"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="20dp"
+        android:src="@drawable/theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Setting" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主题"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnPrimary"
+        android:layout_marginStart="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Theme"
+        app:layout_constraintStart_toStartOf="@+id/Theme"
+        app:layout_constraintTop_toTopOf="@+id/Theme" />
+
+    <ImageButton
+        android:id="@+id/About"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="20dp"
+        android:src="@drawable/about"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Theme" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关于"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnPrimary"
+        android:layout_marginStart="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/About"
+        app:layout_constraintStart_toStartOf="@+id/About"
+        app:layout_constraintTop_toTopOf="@+id/About" />
+
+
+    <View
+        android:id="@+id/SideCard1"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_background"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="-7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SideCard"
+        />
+
+
+    <ImageButton
+        android:id="@+id/Logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="20dp"
+        android:src="@drawable/logout"
+
+        app:layout_constraintStart_toStartOf="@+id/SideCard1"
+        app:layout_constraintTop_toTopOf="@+id/SideCard1"
+        app:layout_constraintBottom_toBottomOf="@+id/SideCard1"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭/登出"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnPrimary"
+        android:layout_marginStart="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Logout"
+        app:layout_constraintStart_toStartOf="@+id/Logout"
+        app:layout_constraintTop_toTopOf="@+id/Logout" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
